@@ -116,10 +116,22 @@
   <h3 id="Main Body">Main Body</h3>
 <p class="ex1">
     <pre>
+      Diverse collision avoidance systems are categorized to highlight key ideas. Figure 1 shows this classification in two main 
+      areas: perception and action. The first phase of any collision avoidance system is perception, primarily obstacle detection. Sensors observe 
+      surroundings and identify obstructions. Various sensors exist, classified as either active or passive based on their functions.
+
+      There are four primary methods for avoiding collisions in autonomous vehicles: geometric, force-field, optimized, and sense and avoid. 
+      Geometric avoidance uses the location and speed of drones to alter their paths, while force-field techniques control attractive and repulsive 
+      forces around obstacles. Optimized methods rely on known obstacle parameters to enhance routing, and sense and avoid utilizes real-time 
+      obstacle detection for avoidance decisions. 
+      The collision avoidance system (CAS) of an autonomous vehicle ensures that it doesn't collide with either stationary or moving obstacles
+      by using detection range and collision radius. 
+      This article provides an overview of these collision avoidance techniques, assessing their effectiveness, efficiency, and cost.
+
        I. <u>Optimisation Method</u>
          Bamboo's fiber composition consists of cell walls that are rich in long, aligned cellulose fibers that provide 
          significant resistance to pulling forces, making them strong in tension. Recent studies <a href="https://www.guaduabamboo.com/blog/mechanical-properties-of-bamboo" target="_blank">show</a> 
-       that their tensile strength ranges between 100-400 MPa, which is significantly higher than most construction grade timbers.
+         that their tensile strength ranges between 100-400 MPa, which is significantly higher than most construction grade timbers.
     </pre>
 </p>
 
@@ -151,7 +163,6 @@ Acoustical Imaging, vol 21. Springer, Boston, MA. [Accessed: 11 October 2024]
 Sharma, S.U. and Shah, D.J. (2016). A Practical Animal Detection and Collision Avoidance System Using Computer Vision Technique. 
 [online] Ieee.org.[Accessed 28 Nov. 2024]
           <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7792584" target = "_blank"> Webpage available here </a>
-
           
         </pre>
       </p>
@@ -162,3 +173,26 @@ Sharma, S.U. and Shah, D.J. (2016). A Practical Animal Detection and Collision A
 const d = new Date();
 document.getElementById("date&time").innerHTML=d;
 </script>
+  
+<html>
+<head>
+    <title>Change Button Colour</title>
+     //Get a reference to the button element
+        window.onload = function() {
+            var button = document.getElementById("colorButton");
+
+            //Function to change the button colour
+            function changeColor() {
+                //Generate a random colour (hexadecimal)
+                var randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+
+                //Set the button's background colour to the random colour
+                button.style.backgroundColor = randomColor;
+            }
+
+            //Add a click event listener to the button
+            button.addEventListener("click", changeColor);
+        };
+    </script>
+</head>
+</html>
